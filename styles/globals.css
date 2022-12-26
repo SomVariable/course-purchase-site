@@ -23,16 +23,19 @@ a {
 	--fw-bold: 700;
 
 	/* font-size */
-	--fs-xxs: 10px;
-	--fs-xs: 12px;
+	--fs-xxs: 12px;
+	--fs-xs: 14px;
 	--fs-s: 16px;
 	--fs-m: 18px;
 	--fs-l: 20px;
-	--fs-xl: 26px;
-	--fs-xxl: 36px;
+	--fs-xxl: 22px;
+	--fs-xxxl: 36px;
 
 	/* base-size */
-	--base: 4rem;
+	--base: 4px;
+
+	/* base-transition */
+	--transition: 0.2;
 
 	/* font-family */
 	--ff-noto-sans: "Noto Sans";
@@ -40,6 +43,7 @@ a {
 	/* colors */
 	--color-dark: #3B434E;
 	--color-primary: #7653FC;
+	--color-primary-hover: #582FFB;
 	--color-dangerous: #DE0000;
 	--color-gold: #DCB44E;
 
