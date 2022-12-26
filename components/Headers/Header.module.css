@@ -1,5 +1,17 @@
 .h1 {
-	font-size: var(--fs-xl);
+	font-size: var(--fs-xxl);
 	font-weight: var(--fw-medium);
 	line-height: 35px;
+}
+
+.h2 {
+	font-size: var(--fs-xl);
+	font-weight: var(--fw-medium);
+	line-height: 30px;
+}
+
+.h3 {
+	font-size: var(--fs-l);
+	font-weight: var(--fw-bold);
+	line-height: 27px;
 }
