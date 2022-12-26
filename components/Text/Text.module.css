@@ -1,0 +1,22 @@
+.text {
+	color: var(--color-dark);
+
+	font-family: var(--ff-noto-sans);
+	font-size: var(--fs-s);
+	font-weight: var(--fw-regular);
+	font-style: normal;
+	line-height: var(--base) * 6;
+}
+
+.small {
+	font-size: var(--fs-xs);
+}
+
+.medium {
+	font-size: var(--fs-s);
+}
+
+.big {
+	font-size: var(--fs-m);
+	line-height: var(--base) * 7;
+}
