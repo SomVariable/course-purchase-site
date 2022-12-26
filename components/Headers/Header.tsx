@@ -16,7 +16,7 @@ interface IHeaderProps{
 }
 
 
-function Header({tag, children} : IHeaderProps) {
+function Header({tag, children} : IHeaderProps) : JSX.Element{
   switch(tag){
     case hTags.h1: 
       return <h1 className={style.h1}>{children}</h1>
