@@ -2,6 +2,7 @@ import Button from "../components/Button/Button";
 import Header, { hTags } from "../components/Headers/Header";
 import { arrowDir } from "../components/Arrow/ArrowIcon";
 import Text, { textT } from "../components/Text/Text";
+import { Tag } from "../components";
 
 export default function Home(): JSX.Element {
 	return (
@@ -24,7 +25,10 @@ export default function Home(): JSX.Element {
 			
 			</div>
 			
-			
+			<Tag size='s'>Ghost</Tag>
+			<Tag size='m' color='red'>Red</Tag>
+			<Tag size='s' color='green'>Green</Tag>
+			<Tag color='primary'>Green</Tag>
 			
 			<Button appearance="primary" arrowDirection = {arrowDir.right}>Primary</Button>
 			<Button appearance="secondary" arrowDirection = {arrowDir.down}>Primary</Button>
