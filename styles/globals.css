@@ -4,6 +4,7 @@ body {
 	padding: 0;
 
 	color: var(--color-dark);
+	background-color: #000;
 
 	font-family: var(--ff-noto-sans), sans-serif;
 }
@@ -15,6 +16,24 @@ a {
 }
 
 :root {
+	/* font-weight */
+	--fw-light: 100;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+
+	/* font-size */
+	--fs-xxs: 10px;
+	--fs-xs: 12px;
+	--fs-s: 16px;
+	--fs-m: 18px;
+	--fs-l: 20px;
+	--fs-xl: 26px;
+	--fs-xxl: 36px;
+
+	/* base-size */
+	--base: 4rem;
+
 	/* font-family */
 	--ff-noto-sans: "Noto Sans";
 
@@ -52,10 +71,4 @@ a {
 
 	/* black */
 	--color-black: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
 }
