@@ -5,7 +5,7 @@ import styles from './starIcon.module.css'
 
 
 
-interface IStarIcon extends React.SVGProps<SVGSVGElement>{
+export interface IStarIcon extends React.SVGProps<SVGSVGElement>{
     isActive: boolean;
 }
 

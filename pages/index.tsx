@@ -4,8 +4,12 @@ import { arrowDir } from "../components/UI/Arrow/ArrowIcon";
 import Text, { textT } from "../components/Text/Text";
 import { Tag } from "../components";
 import Rating from "../components/Rating/Rating";
+import { useState } from "react";
 
 export default function Home(): JSX.Element {
+	const [rating, setRating] = useState<number>(4);
+
+
 	return (
 		<div>
 			<Header tag = {hTags.h1}>sfsfsf</Header>
@@ -30,7 +34,7 @@ export default function Home(): JSX.Element {
 			<Tag size='m' color='red'>Red</Tag>
 			<Tag size='s' color='green'>Green</Tag>
 			<Tag color='primary'>Green</Tag>
-			<Rating rating = {2}/>
+			<Rating rating = {rating} setRating = {setRating} isEditable = {true}/>
 			
 			<Button appearance="primary" arrowDirection = {arrowDir.right}>Primary</Button>
 			<Button appearance="secondary" arrowDirection = {arrowDir.down}>Primary</Button>
