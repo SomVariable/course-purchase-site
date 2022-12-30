@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import cn from 'classnames'
 import styles from './Button.module.css'
-import ArrowIcon, { arrowDir } from '../Arrow/ArrowIcon';
+import ArrowIcon, { arrowDir } from '../UI/Arrow/ArrowIcon';
 
 
 
