@@ -1,0 +1,44 @@
+.wrapper {
+	display: grid;
+
+	min-height: 100vh;
+	grid-template:
+		". header header ." auto
+		". sidebar body ." 1fr
+		"footer footer footer footer" auto
+		/ auto 230px minmax(320px, 1280px);
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.body {
+	grid-area: body;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+@media (max-width: 765px) {
+	.wrapper {
+		grid-template-columns: minmax(320px, 1fr);
+		grid-template-areas:
+			"header"
+			"body"
+			"footer";
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.header {
+		display: block;
+	}
+}

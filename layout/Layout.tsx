@@ -10,20 +10,18 @@ interface ILayoutProps {
 
 function Layout({children} : ILayoutProps) : JSX.Element{
   return (
-    <>
-        <Header />
-        <div className="">
-            <Sidebar />
-            <div className = "">
-                {children}
-            </div>
+    <div className = {styles.wrapper}>
+        <Header className = {styles.header}/>
+        <Sidebar className = {styles.sidebar}/>
+        <div className = {styles.body}>
+            {children}
         </div>
-        <Footer />
-    </>
+        <Footer className = {styles.footer}></Footer>
+    </div>
   )
 }
 
-const withLayout = <T extends Record<string, unknown>>(Component : FunctionComponent<T>) => {
+export const withLayout = <T extends Record<string, unknown>>(Component : FunctionComponent<T>) => {
     return function withLayoutComponent(props: T) : JSX.Element{
         return (
             <Layout>
@@ -32,5 +30,3 @@ const withLayout = <T extends Record<string, unknown>>(Component : FunctionCompo
         )
     }
 }
-
-export default Layout
