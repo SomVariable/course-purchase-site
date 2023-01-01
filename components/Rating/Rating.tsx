@@ -21,26 +21,15 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
 
     const constructRating = (rating: number) => {
         const newratingArray = ratingArray.map((el, index) => {
-            if(index + 1 <= rating){
-                return  <span
-                    onMouseEnter={() => changeDispay(index + 1)}
-                    onMouseLeave={() => changeDispay(rating)}
-                    onClick={() => onClick(index + 1)}
-                    key = {index}
-                ><StarIcon             
-                    isActive = {true}
-                    
-                    /></span>
-            }
             return <span
-                onMouseEnter={() => changeDispay(index + 1)}
-                onMouseLeave={() => changeDispay(rating)}
-                onClick={() => onClick(index + 1)}
-                tabIndex={isEditable ? 0 : -1}
-                key = {index}
-            ><StarIcon 
-                    isActive = {false}
-                    
+            onMouseEnter={() => changeDispay(index + 1)}
+            onMouseLeave={() => changeDispay(rating)}
+            onClick={() => onClick(index + 1)}
+            key = {index}
+            
+        ><StarIcon 
+                    isActive = {index + 1 <= rating? true : false}
+                    tabIndex = {isEditable? 0 : -1}
                     onKeyDown={(e: KeyboardEvent<SVGElement>) => isEditable && handleSpace(index + 1, e)}
             /></span>
         })
@@ -48,36 +37,31 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
         setRatingArray(newratingArray);
     }
 
-
-	const changeDispay = (i: number) => {
-		if (!isEditable) {
-			return;
-		}
-		constructRating(i);
-	};
-
-	const onClick = (i: number) => {
-		if (!isEditable || !setRating) {
-			return;
-		}
-		setRating(i);
-	};
-
-	const handleSpace = (i: number, e: KeyboardEvent<SVGElement>) => {
+    const handleSpace = (i: number, e: KeyboardEvent<SVGElement>) => {
 		if (e.code != 'Space' || !setRating) {
 			return;
 		}
 		setRating(i);
 	};
 
+    const changeDispay = (i: number) => {
+		if (!isEditable) {
+			return;
+		}
+		constructRating(i);
+	};
+
+	const onClick = (i: number) => {    
+		if (!isEditable || !setRating) {
+			return;
+		}
+		setRating(i);
+	};
+	
+
     return (
-        <span className={cn(styles.rating, className)} {...props}>
+        <span className={cn(styles.rating, className)} key = {Math.random()} {...props}>
             {ratingArray}
         </span>
     )
 }
-
-
-// onMouseEnter={() => changeDispay(i + 1)}
-// onMouseLeave={() => changeDispay(rating)}
-// onClick={() => onClick(i + 1)}
