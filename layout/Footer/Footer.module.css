@@ -1,3 +1,31 @@
 .footer {
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+
+	padding: 25px;
+
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+.links {
+	display: flex;
+	gap: 40px;
+}
+
+.links a:hover {
+	color: var(--color-white-600);
+}
+
+@media (max-width: 765px) {
+	.footer {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.links {
+		flex-direction: column;
+		gap: 10px;
+	}
 }
