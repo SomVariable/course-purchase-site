@@ -72,6 +72,12 @@
                     "title": "courses Interior-Design",
                     "_id": "1234567890102",
                     "category": "Interior-Design"
+                },
+                {
+                    "alias": "photoshop",
+                    "title": "courses Photoshop",
+                    "_id": "1234567890103",
+                    "category": "Photoshop"
                 }
             ]
         },
@@ -118,6 +124,113 @@
                     "category": "Floristics"
                 }
             ]
+        }
+    ],
+    "byAllias": [
+        {
+            "tags": [
+                "adobe photoshop",
+                "web design"
+            ],
+            "_id": "1234567890103",
+            "secondCategory": "Design",
+            "alias": "photoshop",
+            "title": "courses Photoshop",
+            "category": "Photoshop",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best Photoshop courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890001",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891001",
+                "count": 13000,
+                "juniorSalary": 35000,
+                "middleSalary": 110000,
+                "seniorSalary": 185000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        },
+        {
+            "tags": [
+                "python",
+                "programming"
+            ],
+            "_id": "1234567890103",
+            "secondCategory": "Design",
+            "alias": "python",
+            "title": "courses Python",
+            "category": "Python",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best Python courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890001",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891001",
+                "count": 13000,
+                "juniorSalary": 35000,
+                "middleSalary": 110000,
+                "seniorSalary": 185000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+    ],
+    "products": [
+        {
+            "_id": "1234567800001",
+            "categories": [
+                "fraphic design",
+                "web-design",
+                "photoshop"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
         }
     ]
 }
