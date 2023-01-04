@@ -6,10 +6,13 @@ import { Tag } from "../components";
 import Rating from "../components/Rating/Rating";
 import { useState } from "react";
 import { withLayout } from "../layout/Layout";
+import { GetStaticProps } from "next";
+import axios from "axios"
+import { MenuItem } from "../interfaces/menu.interface";
 
-function Home(): JSX.Element {
+
+function Home({menu, firstCategory} : HomeProps): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
-
 
 	return (
 		<div>
@@ -37,6 +40,10 @@ function Home(): JSX.Element {
 			<Tag color='primary'>Green</Tag>
 			<Rating rating = {rating} setRating = {setRating} isEditable = {true}/>
 			
+			<ul>
+				{menu.map(m => (<li key = {m._id.secondCategory}>{m._id.secondCategory}</li>))}
+			</ul>
+			
 			<Button appearance="primary" arrowDirection = {arrowDir.right}>Primary</Button>
 			<Button appearance="secondary" arrowDirection = {arrowDir.down}>Primary</Button>
 			<Button appearance="primary" arrowDirection = {arrowDir.left}>Primary</Button>
@@ -48,3 +55,19 @@ function Home(): JSX.Element {
 
 
 export default withLayout(Home);
+
+export const getStaticProps: GetStaticProps = async () => {
+	const firstCategory = "courses"
+	const {data: menu} = await axios.get<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}`)
+	return {
+		props: {
+			menu,
+			firstCategory
+		}
+	}
+}
+
+interface HomeProps extends Record<string, unknown>{
+	menu: MenuItem[];
+	firstCategory: number;
+}
