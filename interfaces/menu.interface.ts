@@ -17,7 +17,7 @@ export interface Cours {
 
 export interface MenuItem {
     _id: Id;
-    courses: Cours[];
+    pages: PageItem[];
 }
 
 

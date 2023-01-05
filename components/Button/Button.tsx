@@ -5,21 +5,21 @@ import ArrowIcon, { arrowDir } from '../UI/Arrow/ArrowIcon';
 
 
 
-interface IButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>{
+interface IButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
     appearance: "primary" | "secondary";
     children: ReactNode;
-    arrowDirection?: arrowDir.right| arrowDir.left | arrowDir.up | arrowDir.down | "none";
+    arrowDirection?: arrowDir.right | arrowDir.left | arrowDir.up | arrowDir.down | "none";
 }
 
-const Button = ({appearance, arrowDirection = "none", children, className, ...props}: IButtonProps) : JSX.Element => {
-    return <button className = {cn(styles.button, className, {
+const Button = ({ appearance, arrowDirection = "none", children, className, ...props }: IButtonProps): JSX.Element => {
+    return <button className={cn(styles.button, className, {
         [styles.primary]: appearance == 'primary',
-	    [styles.secondary]: appearance == 'secondary',
+        [styles.secondary]: appearance == 'secondary',
     })}
-    {...props}
+        {...props}
     >
         {children}
-        <ArrowIcon arrowDirection = {arrowDirection}/>
+        <ArrowIcon arrowDirection={arrowDirection} />
     </button>
 }
 

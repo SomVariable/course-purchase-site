@@ -1,0 +1,401 @@
+// {
+//     "courses": [
+//         {
+//             "_id": {
+//                 "secondCategory": "Analitics"
+//             },
+//             "pages": [
+//                 {
+//                     "alias": "financial-analitics",
+//                     "title": "courses Financial-Analitics",
+//                     "_id": "1234567890113",
+//                     "category": "Financial-Analitics"
+//                 },
+//                 {
+//                     "alias": "big-data",
+//                     "title": "courses Big-Data",
+//                     "_id": "1234567890114",
+//                     "category": "Big-Data"
+//                 },
+//                 {
+//                     "alias": "data-science",
+//                     "title": "courses Data-Science",
+//                     "_id": "1234567890115",
+//                     "category": "Data-Science"
+//                 },
+//                 {
+//                     "alias": "machine-learning",
+//                     "title": "courses Machine-Learning",
+//                     "_id": "1234567890116",
+//                     "category": "Machine-Learning"
+//                 }
+//             ]
+//         },
+//         {
+//             "_id": {
+//                 "secondCategory": "Buisiness"
+//             },
+//             "pages": [
+//                 {
+//                     "alias": "financial-literacy",
+//                     "title": "courses Financial-Literacy",
+//                     "_id": "1234567890117",
+//                     "category": "Financial-Literacy"
+//                 },
+//                 {
+//                     "alias": "entrepreneurs",
+//                     "title": "courses Entrepreneurs",
+//                     "_id": "1234567890118",
+//                     "category": "Entrepreneurs"
+//                 }
+//             ]
+//         },
+//         {
+//             "_id": {
+//                 "secondCategory": "Design"
+//             },
+//             "pages": [
+//                 {
+//                     "alias": "graphic-design",
+//                     "title": "courses Graphic-Design",
+//                     "_id": "1234567890119",
+//                     "category": "Graphic-Design"
+//                 },
+//                 {
+//                     "alias": "web-design",
+//                     "title": "courses Web-Design",
+//                     "_id": "1234567890101",
+//                     "category": "Web-Design"
+//                 },
+//                 {
+//                     "alias": "іnterior-design",
+//                     "title": "courses Interior-Design",
+//                     "_id": "1234567890102",
+//                     "category": "Interior-Design"
+//                 },
+//                 {
+//                     "alias": "photoshop",
+//                     "title": "courses Photoshop",
+//                     "_id": "1234567890103",
+//                     "category": "Photoshop"
+//                 }
+//             ]
+//         },
+//         {
+//             "_id": {
+//                 "secondCategory": "Programming"
+//             },
+//             "pages": [
+//                 {
+//                     "alias": "python",
+//                     "title": "courses Python",
+//                     "_id": "1234567890123",
+//                     "category": "Python"
+//                 },
+//                 {
+//                     "alias": "1C",
+//                     "title": "courses 1C",
+//                     "_id": "1234567890124",
+//                     "category": "Python"
+//                 }
+//             ]
+//         },
+//         {
+//             "_id": {
+//                 "secondCategory": "Other"
+//             },
+//             "pages": [
+//                 {
+//                     "alias": "cutting-sewing",
+//                     "title": "courses Cutting-sewing",
+//                     "_id": "1234567890125",
+//                     "category": "cutting-sewing"
+//                 },
+//                 {
+//                     "alias": "photography",
+//                     "title": "courses Photography",
+//                     "_id": "1234567890126",
+//                     "category": "Photography"
+//                 },
+//                 {
+//                     "alias": "floristics",
+//                     "title": "courses Floristics",
+//                     "_id": "1234567890127",
+//                     "category": "Floristics"
+//                 }
+//             ]
+//         }
+//     ],
+//     "byAlias": [
+//         {
+//             "tags": [
+//                 "adobe photoshop",
+//                 "web design"
+//             ],
+//             "_id": "1234567890103",
+//             "secondCategory": "Design",
+//             "alias": "photoshop",
+//             "title": "courses Photoshop",
+//             "category": "Photoshop",
+//             "seoText": "",
+//             "tagsTitle": "Skills",
+//             "metaTitle": "best Photoshop courses",
+//             "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+//             "firstCategory": "courses",
+//             "advantages": [{
+//                 "_id": "1234567890001",
+//                 "title": "",
+//                 "description": ""
+//             }],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "hh": {
+//                 "_id": "1234567891001",
+//                 "count": 13000,
+//                 "juniorSalary": 35000,
+//                 "middleSalary": 110000,
+//                 "seniorSalary": 185000,
+//                 "updatedAt": "2021-04-2BT17:57:10.3342"
+//             }
+//         },
+//         {
+//             "tags": [
+//                 "python",
+//                 "programming"
+//             ],
+//             "_id": "1234567890103",
+//             "secondCategory": "Design",
+//             "alias": "python",
+//             "title": "courses Python",
+//             "category": "Python",
+//             "seoText": "",
+//             "tagsTitle": "Skills",
+//             "metaTitle": "best Python courses",
+//             "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+//             "firstCategory": "courses",
+//             "advantages": [{
+//                 "_id": "1234567890001",
+//                 "title": "",
+//                 "description": ""
+//             }],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "hh": {
+//                 "_id": "1234567891001",
+//                 "count": 13000,
+//                 "juniorSalary": 35000,
+//                 "middleSalary": 110000,
+//                 "seniorSalary": 185000,
+//                 "updatedAt": "2021-04-2BT17:57:10.3342"
+//             }
+//         }
+//     ],
+//     "products": [
+//         {
+//             "_id": "1234567800001",
+//             "categories": [
+//                 "fraphic design",
+//                 "web-design",
+//                 "Photoshop"
+//             ],
+//             "tags": ["easy work", "+ 2 month english"],
+//             "title": "graphic designer",
+//             "link": "https://skillbox.ru/course/profession-graphdesigner",
+//             "price": 147500,
+//             "credit": 5900,
+//             "oldPrice": 295000,
+//             "description": "you will know, how create your own style and develop best logo",
+//             "characteristics": [
+//                 {
+//                     "value": "skillbox",
+//                     "name": "school"
+//                 },
+//                 {
+//                     "value": "Diplom",
+//                     "name": "certificate of completion"
+//                 },
+//                 {
+//                     "value": "from 0",
+//                     "name": "Difficult"
+//                 },
+//                 {
+//                     "value": "24 month",
+//                     "name": "Duration"
+//                 }
+//             ],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "__v": 0,
+//             "image": "",
+//             "initialRating": 5,
+//             "reviews": [],
+//             "reviewCount": 0,
+//             "reviewAvg": null
+//         },
+//         {
+//             "_id": "1234567800002",
+//             "categories": [
+//                 "fraphic design",
+//                 "web-design",
+//                 "Photoshop"
+//             ],
+//             "tags": ["easy work", "+ 2 month english"],
+//             "title": "graphic designer",
+//             "link": "https://skillbox.ru/course/profession-graphdesigner",
+//             "price": 147500,
+//             "credit": 5900,
+//             "oldPrice": 295000,
+//             "description": "you will know, how create your own style and develop best logo",
+//             "characteristics": [
+//                 {
+//                     "value": "skillbox",
+//                     "name": "school"
+//                 },
+//                 {
+//                     "value": "Diplom",
+//                     "name": "certificate of completion"
+//                 },
+//                 {
+//                     "value": "from 0",
+//                     "name": "Difficult"
+//                 },
+//                 {
+//                     "value": "24 month",
+//                     "name": "Duration"
+//                 }
+//             ],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "__v": 0,
+//             "image": "",
+//             "initialRating": 5,
+//             "reviews": [],
+//             "reviewCount": 0,
+//             "reviewAvg": null
+//         },
+//         {
+//             "_id": "1234567800003",
+//             "categories": [
+//                 "fraphic design",
+//                 "web-design",
+//                 "Python"
+//             ],
+//             "tags": ["easy work", "+ 2 month english"],
+//             "title": "graphic designer",
+//             "link": "https://skillbox.ru/course/profession-graphdesigner",
+//             "price": 147500,
+//             "credit": 5900,
+//             "oldPrice": 295000,
+//             "description": "you will know, how create your own style and develop best logo",
+//             "characteristics": [
+//                 {
+//                     "value": "skillbox",
+//                     "name": "school"
+//                 },
+//                 {
+//                     "value": "Diplom",
+//                     "name": "certificate of completion"
+//                 },
+//                 {
+//                     "value": "from 0",
+//                     "name": "Difficult"
+//                 },
+//                 {
+//                     "value": "24 month",
+//                     "name": "Duration"
+//                 }
+//             ],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "__v": 0,
+//             "image": "",
+//             "initialRating": 5,
+//             "reviews": [],
+//             "reviewCount": 0,
+//             "reviewAvg": null
+//         },
+//         {
+//             "_id": "1234567800004",
+//             "categories": [
+//                 "fraphic design",
+//                 "1C"
+//             ],
+//             "tags": ["easy work", "+ 2 month english"],
+//             "title": "graphic designer",
+//             "link": "https://skillbox.ru/course/profession-graphdesigner",
+//             "price": 147500,
+//             "credit": 5900,
+//             "oldPrice": 295000,
+//             "description": "you will know, how create your own style and develop best logo",
+//             "characteristics": [
+//                 {
+//                     "value": "skillbox",
+//                     "name": "school"
+//                 },
+//                 {
+//                     "value": "Diplom",
+//                     "name": "certificate of completion"
+//                 },
+//                 {
+//                     "value": "from 0",
+//                     "name": "Difficult"
+//                 },
+//                 {
+//                     "value": "24 month",
+//                     "name": "Duration"
+//                 }
+//             ],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "__v": 0,
+//             "image": "",
+//             "initialRating": 5,
+//             "reviews": [],
+//             "reviewCount": 0,
+//             "reviewAvg": null
+//         }
+//         ,
+//         {
+//             "_id": "1234567800005",
+//             "categories": [
+//                 "fraphic design",
+//                 "cutting-sewing"
+//             ],
+//             "tags": ["easy work", "+ 2 month english"],
+//             "title": "graphic designer",
+//             "link": "https://skillbox.ru/course/profession-graphdesigner",
+//             "price": 147500,
+//             "credit": 5900,
+//             "oldPrice": 295000,
+//             "description": "you will know, how create your own style and develop best logo",
+//             "characteristics": [
+//                 {
+//                     "value": "skillbox",
+//                     "name": "school"
+//                 },
+//                 {
+//                     "value": "Diplom",
+//                     "name": "certificate of completion"
+//                 },
+//                 {
+//                     "value": "from 0",
+//                     "name": "Difficult"
+//                 },
+//                 {
+//                     "value": "24 month",
+//                     "name": "Duration"
+//                 }
+//             ],
+//             "createdAt": "2021-03-2BT17:57:10.3342",
+//             "updatedAt": "2021-04-2BT17:57:10.3342",
+//             "__v": 0,
+//             "image": "",
+//             "initialRating": 5,
+//             "reviews": [],
+//             "reviewCount": 0,
+//             "reviewAvg": null
+//         }
+//     ]
+// }
+
+
