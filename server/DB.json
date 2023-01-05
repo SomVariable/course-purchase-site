@@ -2,9 +2,71 @@
     "courses": [
         {
             "_id": {
+                "secondCategory": "Analitics"
+            },
+            "pages": [
+                {
+                    "alias": "financial-analitics",
+                    "title": "courses Financial-Analitics",
+                    "_id": "1234567890113",
+                    "category": "Financial-Analitics"
+                },
+                {
+                    "alias": "big-data",
+                    "title": "courses Big-Data",
+                    "_id": "1234567890114",
+                    "category": "Big-Data"
+                },
+                {
+                    "alias": "data-science",
+                    "title": "courses Data-Science",
+                    "_id": "1234567890115",
+                    "category": "Data-Science"
+                },
+                {
+                    "alias": "machine-learning",
+                    "title": "courses Machine-Learning",
+                    "_id": "1234567890116",
+                    "category": "Machine-Learning"
+                }
+            ]
+        },
+        {
+            "_id": {
+                "secondCategory": "Buisiness"
+            },
+            "pages": [
+                {
+                    "alias": "financial-literacy",
+                    "title": "courses Financial-Literacy",
+                    "_id": "1234567890117",
+                    "category": "Financial-Literacy"
+                },
+                {
+                    "alias": "entrepreneurs",
+                    "title": "courses Entrepreneurs",
+                    "_id": "1234567890118",
+                    "category": "Entrepreneurs"
+                }
+            ]
+        },
+        {
+            "_id": {
                 "secondCategory": "Design"
             },
             "pages": [
+                {
+                    "alias": "graphic-design",
+                    "title": "courses Graphic-Design",
+                    "_id": "1234567890119",
+                    "category": "Graphic-Design"
+                },
+                {
+                    "alias": "web-design",
+                    "title": "courses Web-Design",
+                    "_id": "1234567890101",
+                    "category": "Web-Design"
+                },
                 {
                     "alias": "photoshop",
                     "title": "courses Photoshop",
@@ -23,6 +85,37 @@
                     "title": "courses Python",
                     "_id": "1234567890123",
                     "category": "Python"
+                },
+                {
+                    "alias": "1C",
+                    "title": "courses 1C",
+                    "_id": "1234567890124",
+                    "category": "Python"
+                }
+            ]
+        },
+        {
+            "_id": {
+                "secondCategory": "Other"
+            },
+            "pages": [
+                {
+                    "alias": "cutting-sewing",
+                    "title": "courses Cutting-sewing",
+                    "_id": "1234567890125",
+                    "category": "cutting-sewing"
+                },
+                {
+                    "alias": "photography",
+                    "title": "courses Photography",
+                    "_id": "1234567890126",
+                    "category": "Photography"
+                },
+                {
+                    "alias": "floristics",
+                    "title": "courses Floristics",
+                    "_id": "1234567890127",
+                    "category": "Floristics"
                 }
             ]
         }
@@ -65,7 +158,7 @@
                 "programming"
             ],
             "_id": "1234567890103",
-            "secondCategory": "Design",
+            "secondCategory": "Programming",
             "alias": "python",
             "title": "courses Python",
             "category": "Python",
@@ -75,7 +168,7 @@
             "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
             "firstCategory": "courses",
             "advantages": [{
-                "_id": "1234567890001",
+                "_id": "1234567890003",
                 "title": "",
                 "description": ""
             }],
@@ -84,9 +177,377 @@
             "hh": {
                 "_id": "1234567891001",
                 "count": 13000,
-                "juniorSalary": 35000,
-                "middleSalary": 110000,
-                "seniorSalary": 185000,
+                "juniorSalary": 53000,
+                "middleSalary": 150600,
+                "seniorSalary": 158000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "financial-analitics"
+            ],
+            "_id": "1234567890104",
+            "secondCategory": "Analitics",
+            "alias": "financial-analitics",
+            "title": "courses financial-analitics",
+            "category": "Financial-analitics",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best Financial-analitics courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890004",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891006",
+                "count": 13600,
+                "juniorSalary": 36000,
+                "middleSalary": 130000,
+                "seniorSalary": 145000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        },
+        {
+            "tags": [
+                "big-data"
+            ],
+            "_id": "1234567890104",
+            "secondCategory": "Big-data",
+            "alias": "big-data",
+            "title": "courses Big-data",
+            "category": "big-data",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best big-data courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890005",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891007",
+                "count": 10600,
+                "juniorSalary": 39000,
+                "middleSalary": 130050,
+                "seniorSalary": 179000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        },
+        {
+            "tags": [
+                "data-science"
+            ],
+            "_id": "1234567890107",
+            "secondCategory": "Data-science",
+            "alias": "data-science",
+            "title": "courses Data-science",
+            "category": "data-science",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best data-science courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 25600,
+                "juniorSalary": 65000,
+                "middleSalary": 160050,
+                "seniorSalary": 239000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        },
+        {
+            "tags": [
+                "machine-learning"
+            ],
+            "_id": "1234567800100",
+            "secondCategory": "Machine-learning",
+            "alias": "machine-learning",
+            "title": "courses Machine-learning",
+            "category": "machine-learning",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best machine-learning courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 10600,
+                "juniorSalary": 39000,
+                "middleSalary": 130050,
+                "seniorSalary": 179000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        },
+        {
+            "tags": [
+                "financial-literacy"
+            ],
+            "_id": "1234567800109",
+            "secondCategory": "financial-literacy",
+            "alias": "financial-literacy",
+            "title": "courses financial-literacy",
+            "category": "financial-literacy",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best financial-literacy courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 10600,
+                "juniorSalary": 39000,
+                "middleSalary": 130050,
+                "seniorSalary": 179000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "entrepreneurs"
+            ],
+            "_id": "1234567800102",
+            "secondCategory": "entrepreneurs",
+            "alias": "entrepreneurs",
+            "title": "courses entrepreneurs",
+            "category": "entrepreneurs",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best entrepreneurs courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 10600,
+                "juniorSalary": 39000,
+                "middleSalary": 130050,
+                "seniorSalary": 179000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "graphic-design"
+            ],
+            "_id": "1234567800353",
+            "secondCategory": "graphic-design",
+            "alias": "graphic-design",
+            "title": "courses graphic-design",
+            "category": "graphic-design",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best graphic-design courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "web-design"
+            ],
+            "_id": "1234567802522",
+            "secondCategory": "web-design",
+            "alias": "web-design",
+            "title": "courses web-design",
+            "category": "web-design",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best web-design courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "1C"
+            ],
+            "_id": "1234584632522",
+            "secondCategory": "1C",
+            "alias": "1C",
+            "title": "courses 1C",
+            "category": "1C",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best 1C courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "cutting-sewing"
+            ],
+            "_id": "1234584632522",
+            "secondCategory": "cutting-sewing",
+            "alias": "cutting-sewing",
+            "title": "courses cutting-sewing",
+            "category": "cutting-sewing",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best cutting courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "photography"
+            ],
+            "_id": "1234584632522",
+            "secondCategory": "photography",
+            "alias": "photography",
+            "title": "courses photography",
+            "category": "photography",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best photography courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
+                "updatedAt": "2021-04-2BT17:57:10.3342"
+            }
+        }
+        ,
+        {
+            "tags": [
+                "floristics"
+            ],
+            "_id": "1234584632522",
+            "secondCategory": "floristics",
+            "alias": "floristics",
+            "title": "courses floristics",
+            "category": "floristics",
+            "seoText": "",
+            "tagsTitle": "Skills",
+            "metaTitle": "best floristics courses",
+            "metaDescription": "Найдите себе идеального преподавателя — любая тема, любой уровень, любой язык. Доступ к более чем 213 000 онлайн-курсов. Найдите себе идеального преподавателя.",
+            "firstCategory": "courses",
+            "advantages": [{
+                "_id": "1234567890008",
+                "title": "",
+                "description": ""
+            }],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "hh": {
+                "_id": "1234567891009",
+                "count": 81999,
+                "juniorSalary": 83100,
+                "middleSalary": 531050,
+                "seniorSalary": 731000,
                 "updatedAt": "2021-04-2BT17:57:10.3342"
             }
         }
@@ -214,7 +675,249 @@
             "reviews": [],
             "reviewCount": 0,
             "reviewAvg": null
+        },
+        {
+            "_id": "1234567800004",
+            "categories": [
+                "fraphic design",
+                "1C"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
         }
+        ,
+        {
+            "_id": "1234567800005",
+            "categories": [
+                "fraphic design",
+                "cutting-sewing"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
+        }
+        ,
+        {
+            "_id": "1234567800005",
+            "categories": [
+                "floristics"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
+        }
+        ,
+        {
+            "_id": "1234567800005",
+            "categories": [
+                "photography"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
+        }
+        ,
+        {
+            "_id": "1234567800005",
+            "categories": [
+                "entrepreneurs"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
+        }
+        ,
+        {
+            "_id": "1234567800005",
+            "categories": [
+                "financial"
+            ],
+            "tags": ["easy work", "+ 2 month english"],
+            "title": "graphic designer",
+            "link": "https://skillbox.ru/course/profession-graphdesigner",
+            "price": 147500,
+            "credit": 5900,
+            "oldPrice": 295000,
+            "description": "you will know, how create your own style and develop best logo",
+            "characteristics": [
+                {
+                    "value": "skillbox",
+                    "name": "school"
+                },
+                {
+                    "value": "Diplom",
+                    "name": "certificate of completion"
+                },
+                {
+                    "value": "from 0",
+                    "name": "Difficult"
+                },
+                {
+                    "value": "24 month",
+                    "name": "Duration"
+                }
+            ],
+            "createdAt": "2021-03-2BT17:57:10.3342",
+            "updatedAt": "2021-04-2BT17:57:10.3342",
+            "__v": 0,
+            "image": "",
+            "initialRating": 5,
+            "reviews": [],
+            "reviewCount": 0,
+            "reviewAvg": null
+        }
+        
     ]
 }
 
