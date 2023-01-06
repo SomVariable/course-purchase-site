@@ -49,9 +49,7 @@ function Home({ menu, firstCategory }: HomeProps): JSX.Element {
 			<Tag color='primary'>Green</Tag>
 			<Rating rating={rating} setRating={setRating} isEditable={true} />
 
-			<ul>
-				{menu.map(m => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
-			</ul>
+			
 
 			<Button appearance="primary" arrowDirection={arrowDir.right}>Primary</Button>
 			<Button appearance="secondary" arrowDirection={arrowDir.down}>Primary</Button>
@@ -78,5 +76,5 @@ export const getStaticProps: GetStaticProps = async () => {
 
 interface HomeProps extends Record<string, unknown> {
 	menu: MenuItem[];
-	firstCategory: number;
+	firstCategory: string;
 }
