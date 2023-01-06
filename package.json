@@ -32,6 +32,7 @@
     "date-fns": "^2.29.3",
     "eslint-plugin-react-hooks": "^4.6.0",
     "json-server": "^0.17.1",
+    "nanoid": "^4.0.0",
     "stylelint": "^14.16.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-order": "^5.0.0",

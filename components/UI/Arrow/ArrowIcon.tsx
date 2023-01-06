@@ -14,7 +14,7 @@ export const enum arrowDir{
 interface IArrowIcon extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>{
     arrowDirection?: arrowDir.right| arrowDir.left | arrowDir.up | arrowDir.down | "none";
 }
-console.log(arrowIcon);
+
 export default function ArrowIcon({arrowDirection = 'none'} : IArrowIcon) {
   return (
     <>

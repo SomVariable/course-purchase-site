@@ -5,7 +5,7 @@ import styles from './Rating.module.css';
 import {IStarIcon} from '../UI/star/StarIcon'
 import cn from 'classnames'
 
-interface IRatingProp extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>{
+interface IRatingProp extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>{
     isEditable?: boolean;
     rating: number;
     setRating?: (rating: number) => void
@@ -13,6 +13,7 @@ interface IRatingProp extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLS
 
 
 export default function Rating({rating, isEditable, setRating, className, ...props}: IRatingProp) :JSX.Element {
+    
     const [ratingArray, setRatingArray] = useState<JSX.Element[]>(Array(5).fill(<></>))
 
     useEffect(() => {
@@ -20,18 +21,13 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
     }, [rating])
 
     const constructRating = (rating: number) => {
+        debugger
         const newratingArray = ratingArray.map((el, index) => {
-            return <span
-            onMouseEnter={() => changeDispay(index + 1)}
-            onMouseLeave={() => changeDispay(rating)}
-            onClick={() => onClick(index + 1)}
-            key = {index}
-            
-        ><StarIcon 
+            return <StarIcon 
                     isActive = {index + 1 <= rating? true : false}
                     tabIndex = {isEditable? 0 : -1}
                     onKeyDown={(e: KeyboardEvent<SVGElement>) => isEditable && handleSpace(index + 1, e)}
-            /></span>
+            />
         })
 
         setRatingArray(newratingArray);
@@ -51,17 +47,25 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
 		constructRating(i);
 	};
 
-	const onClick = (i: number) => {    
+	const _onClick = (i: number) => {    
+        
 		if (!isEditable || !setRating) {
 			return;
 		}
+        debugger
 		setRating(i);
 	};
 	
 
     return (
-        <span className={cn(styles.rating, className)} key = {Math.random()} {...props}>
-            {ratingArray}
-        </span>
+        <div className={cn(styles.rating, className)} {...props}>
+            {ratingArray.map((r, i) => (<span 
+            onMouseEnter={() => changeDispay(i + 1)}
+            onMouseLeave={() => changeDispay(rating)}
+            onClick={() => {
+                _onClick(i + 1)
+            }}
+            key={i}>{r}</span>))}
+        </div>
     )
 }
