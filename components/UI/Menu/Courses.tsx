@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './MenuIcon.module.css'
 
-interface ICourses extends React.SVGProps<SVGSVGElement>{
+interface ICoursesIcon extends React.SVGProps<SVGSVGElement>{
     isActive?: boolean;
 }
 
-export default function Courses({isActive = false} : ICourses) {
+export function CoursesIcon({isActive = false} : ICoursesIcon): JSX.Element {
     return (
         <svg className={`${styles.menuIcon} ${isActive && styles.active}`} width="24" height="22" viewBox="0 0 24 22" fill="#787D85" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 11.892L5.67188 9.35095V11.1868C5.67188 13.1911 8.39236 14.7024 12 14.7024C15.6076 14.7024 18.3281 13.1911 18.3281 11.1868V9.35095L12 11.892Z" />

@@ -6,7 +6,7 @@ interface IProductsIcon extends React.SVGProps<SVGSVGElement>{
   isActive?: boolean;
 }
 
-export default function ProductsIcon({isActive = false} : IProductsIcon) {
+export function ProductsIcon({isActive = false} : IProductsIcon): JSX.Element {
   return (
     <svg className={`${styles.menuIcon} ${isActive && styles.active}`} width="24" height="23" viewBox="0 0 24 23" fill="#787D85" xmlns="http://www.w3.org/2000/svg">
       <path d="M15.09 4.16813L6.92174 8.08845L3.67499 6.59091L11.6992 2.87659C11.8792 2.79081 12.0952 2.79081 12.2842 2.87659L15.09 4.16813Z" />
