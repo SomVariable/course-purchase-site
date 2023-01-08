@@ -1,0 +1,7 @@
+.menu-icon {
+	fill: var(--color-white-600);
+}
+
+.active {
+	fill: var(--color-primary);
+}
