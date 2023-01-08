@@ -3,16 +3,17 @@ import Header, { hTags } from "../components/Headers/Header";
 import { arrowDir } from "../components/UI/Arrow/ArrowIcon";
 import Text, { textT } from "../components/Text/Text";
 import { Tag } from "../components";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { withLayout } from "../layout/Layout";
 import { GetStaticProps } from "next";
 import axios from "axios"
 import { MenuItem } from "../interfaces/menu.interface";
-import { ProductModel } from "../interfaces/product.interface";
-import Test from "../components/test/Test";
+import Rating from "../components/Rating/Rating";
 
 
 function Home({ menu, firstCategory }: HomeProps): JSX.Element {
+	const [rating, setRating] = useState<number>(3);
+
 	return (
 		<div>
 			<Header tag={hTags.h1}>sfsfsf</Header>
@@ -37,8 +38,9 @@ function Home({ menu, firstCategory }: HomeProps): JSX.Element {
 			<Tag size='m' color='red'>Red</Tag>
 			<Tag size='s' color='green'>Green</Tag>
 			<Tag color='primary'>Green</Tag>
-			<Test />
 			
+
+			<Rating rating={rating} setRating={setRating} isEditable={true} />
 
 			<Button appearance="primary" arrowDirection={arrowDir.right} >Primary</Button>
 			<Button appearance="secondary" arrowDirection={arrowDir.down}>Primary</Button>
