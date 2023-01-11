@@ -1,0 +1,66 @@
+.menu {
+	display: block;
+}
+
+.menuItem {
+	margin: 0 22px;
+}
+
+.secondBlock {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	min-width: calc(var(--base) * 35);
+	margin: 13px 0 20px;
+}
+
+.secondCategory {
+	margin: 0 12px;
+	padding: 0 32px;
+
+	border-left: 1px solid var(--color-gray-200);
+}
+
+.firstLevel {
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 14px;
+
+	color: var(--color-gray-700);
+
+	font-family: var(--ff-noto-sans);
+	font-size: var(--fs-m);
+	font-weight: var(--fw-medium);
+	line-height: calc(var(--base) * 7);
+	gap: 20px;
+}
+
+.secondLevel {
+	color: var(--color-gray-700);
+
+	font-family: var(--ff-noto-sans);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-light);
+	line-height: calc(var(--base) * 4);
+}
+
+.thirdLevel {
+	color: var(--color-gray-700);
+
+	font-family: var(--ff-noto-sans);
+	font-size: var(--fs-xs);
+	font-weight: var(--fw-medium);
+	line-height: calc(var(--base) * 5);
+}
+
+.active,
+.firstLevel:hover,
+.thirdLevel:hover {
+	color: var(--color-primary);
+}
+
+.active .icon,
+.firstLevel:hover .icon {
+	fill: var(--color-primary);
+}

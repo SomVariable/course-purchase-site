@@ -21,7 +21,6 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
     }, [rating])
 
     const constructRating = (rating: number) => {
-        debugger
         const newratingArray = ratingArray.map((el, index) => {
             return <StarIcon 
                     isActive = {index + 1 <= rating? true : false}
