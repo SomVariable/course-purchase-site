@@ -9,6 +9,7 @@ import { TopLevelCategory } from '../../interfaces/page.interface';
 import { PageItem} from '../../interfaces/menu.interface'
 import styles from './Menu.module.css'
 import cn from 'classnames'
+import Link from 'next/link';
 
 
 function Menu() {
@@ -25,15 +26,16 @@ function Menu() {
         return (
             firstLevelMenuItems.map((menu: FirstLevelMenuItems) => {
                 return <div className = {styles.menuItem} key = {menu.route}>
-                    <a href={`/${menu.route}`}>
+                    <Link href={`/${menu.route}`}>
                         <div className = {cn(styles.firstLevel, {
                             [styles.active]: menu.id == firstCategory
                         })}>
                             {menu.icon({className: styles.icon})}
                             <span>{menu.name}</span>
                         </div>
-                    </a>
+                    </Link>
                     <div className={styles.secondCategory}>
+                        
                         {menu.id == firstCategory && buildSecondLevelMenuItems(menu.id)}
                     </div>
                 </div>
@@ -57,11 +59,11 @@ function Menu() {
     
     const buildThirdLevelMenuItems = (pages:  PageItem[], route: TopLevelCategory) => {
         return (pages.map(page => {
-                    return <a className={cn(styles.thirdLevel, {
+                    return <Link className={cn(styles.thirdLevel, {
                         [styles.thirdLevelActive]: true
                     })} href={`/${route}/${page.alias}`}>
                         {page.category}
-                    </a>
+                    </Link>
                 })
         )
     }

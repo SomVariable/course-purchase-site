@@ -2,11 +2,12 @@ import { withLayout } from "../../layout/Layout";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import axios from "axios"
 import { MenuItem } from "../../interfaces/menu.interface";
-import { TopPageModel } from "../../interfaces/page.interface";
+import { TopLevelCategory, TopPageModel } from "../../interfaces/page.interface";
 import { ProductModel } from "../../interfaces/product.interface";
 import { ParsedUrlQuery } from "querystring";
+import {IAppContext} from "../../context/app.context"
 
-const firstCategory = "courses"
+const firstCategory = TopLevelCategory.Courses
 
 function Course({menu, page, products} : CourseProps): JSX.Element {
 	return (
@@ -38,10 +39,11 @@ export const getStaticProps: GetStaticProps<CourseProps> = async ({params}: GetS
 	
     const page:TopPageModel  = await (await axios.get<TopPageModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/byAlias?alias=${params.allias}`)).data[0];
     const products = await (await axios.get<ProductModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/products`)).data.filter(product => product.categories.includes(page.category));
-
+    const {data: menu} = await axios.get<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}`);
     
 	return {
 		props: {
+            menu,
 			firstCategory,
             page,
             products
@@ -50,7 +52,8 @@ export const getStaticProps: GetStaticProps<CourseProps> = async ({params}: GetS
 }
 
 interface CourseProps extends Record<string, unknown>{
-	firstCategory: string;
-    page: TopPageModel;
-    products: ProductModel[]
+    menu: MenuItem[];
+	firstCategory: TopLevelCategory;
+	page: TopPageModel;
+	products: ProductModel[];
 }
