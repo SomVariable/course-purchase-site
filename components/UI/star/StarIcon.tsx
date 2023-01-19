@@ -3,8 +3,6 @@ import cn from 'classnames'
 
 import styles from './starIcon.module.css'
 
-
-
 export interface IStarIcon extends React.SVGProps<SVGSVGElement>{
     isActive?: boolean;
 }
