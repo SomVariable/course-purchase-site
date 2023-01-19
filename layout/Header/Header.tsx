@@ -5,7 +5,9 @@ export interface SidebarProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivEl
 
 function Header({className, ...props} : SidebarProps) :JSX.Element {
   return (
-    <div className = {className} {...props}>Header</div>
+    <div className = {className} {...props}>
+      Header
+    </div>
   )
 }
 
