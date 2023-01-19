@@ -1,5 +1,7 @@
 .menu {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .menuItem {
@@ -7,15 +9,22 @@
 }
 
 .secondBlock {
+	display: none;
+}
+
+.secondLevelBlockOpened {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+
 	min-width: calc(var(--base) * 35);
 	margin: 13px 0 20px;
 }
 
 .secondCategory {
-	margin: 0 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	padding: 0 32px;
 
 	border-left: 1px solid var(--color-gray-200);
@@ -25,18 +34,17 @@
 	display: flex;
 	align-items: center;
 
-	margin-bottom: 14px;
-
 	color: var(--color-gray-700);
 
 	font-family: var(--ff-noto-sans);
 	font-size: var(--fs-m);
 	font-weight: var(--fw-medium);
 	line-height: calc(var(--base) * 7);
-	gap: 20px;
 }
 
 .secondLevel {
+	cursor: pointer;
+
 	color: var(--color-gray-700);
 
 	font-family: var(--ff-noto-sans);
