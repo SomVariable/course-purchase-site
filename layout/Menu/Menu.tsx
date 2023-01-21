@@ -46,25 +46,32 @@ function Menu() {
         )
     }
 
-    const buildSecondLevelMenuItems = (route: TopLevelCategory) => {
-        debugger
-        return (menu.map((menuItem: MenuItem) => {
-            debugger
-            if (menuItem.pages.map(p => p.alias).includes(router.asPath.split('/')[2])) {
-                menuItem.isOpened = true;
-            }
-            return <div className={styles.category} key={menuItem._id.secondCategory}>
-                <div className={styles.secondLevel} onClick={() => {
-                    openSecondLevelCategory(menuItem._id.secondCategory)
-                }}>{menuItem._id.secondCategory}</div>
-                <div className={cn(styles.secondBlock, {
-                    [styles.secondLevelBlockOpened]: menuItem.isOpened
-                })}>
-                    {buildThirdLevelMenuItems(menuItem.pages, route)}
+    const buildSecondLevelMenuItems = (route: TopLevelCategory)=> {
+        if(menu && menu.length){
+            return menu.map((menuItem: MenuItem) => {
+            
+                if (menuItem.pages.map(p => p.alias).includes(router.asPath.split('/')[2])) {
+                    menuItem.isOpened = true;
+                }
+                return <div className={styles.category} key={menuItem._id.secondCategory}>
+                    <div className={styles.secondLevel} onClick={() => {
+                        openSecondLevelCategory(menuItem._id.secondCategory)
+                    }}>{menuItem._id.secondCategory}</div>
+                    <div className={cn(styles.secondBlock, {
+                        [styles.secondLevelBlockOpened]: menuItem.isOpened
+                    })}>
+                        
+                        {buildThirdLevelMenuItems(menuItem.pages, route)}
+                    </div>
                 </div>
+            })
+        }else{
+            return <div className="">
+                пусто
             </div>
-        })
-        )
+        }
+        
+        
     }
 
     const buildThirdLevelMenuItems = (pages: PageItem[], route: TopLevelCategory) => {

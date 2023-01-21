@@ -10,6 +10,7 @@ interface ILayoutProps {
 }
 
 function Layout({children} : ILayoutProps) : JSX.Element {
+
   return (
     <div className = {styles.wrapper}>
         <Header className = {styles.header}/>

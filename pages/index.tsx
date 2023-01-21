@@ -5,10 +5,12 @@ import Text, { textT } from "../components/Text/Text";
 import { Tag } from "../components";
 import { useState } from "react";
 import { withLayout } from "../layout/Layout";
-import { GetStaticProps } from "next";
+import { GetStaticProps, GetStaticPropsContext } from "next";
 import axios from "axios"
 import { MenuItem } from "../interfaces/menu.interface";
 import Rating from "../components/Rating/Rating";
+import { NextParsedUrlQuery } from "next/dist/server/request-meta";
+import { firstLevelMenuItems } from "../helpers/helpers";
 
 
 function Home({ menu, firstCategory }: HomeProps): JSX.Element {
@@ -54,9 +56,11 @@ function Home({ menu, firstCategory }: HomeProps): JSX.Element {
 
 export default withLayout(Home);
 
-export const getStaticProps: GetStaticProps = async () => {
-	const firstCategory = "courses"
+export const getStaticProps: GetStaticProps = async ({params}: GetStaticPropsContext<NextParsedUrlQuery>) => {
+	const firstCategory = "courses";
 	const { data: menu } = await axios.get<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}`)
+	
+
 	return {
 		props: {
 			menu,
