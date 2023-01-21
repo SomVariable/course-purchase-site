@@ -13,9 +13,10 @@ import { firstLevelMenuItems } from '../../helpers/helpers';
 function Menu() {
     const { menu, setMenu, firstCategory } = useContext(AppContext);
     const router = useRouter();
-
+    debugger
     const openSecondLevelCategory = (secondCategory: string) => {
         setMenu && setMenu(menu.map(m => {
+            debugger
             if(m._id.secondCategory == secondCategory){
                 m.isOpened = !m.isOpened
             }
@@ -50,7 +51,9 @@ function Menu() {
                 menuItem.isOpened = true;
             }
             return <div className = {styles.category} key = {menuItem._id.secondCategory}>
-                <div className={styles.secondLevel} onClick={() => openSecondLevelCategory(menuItem._id.secondCategory)}>{menuItem._id.secondCategory}</div>
+                <div className={styles.secondLevel} onClick={() => {
+                        openSecondLevelCategory(menuItem._id.secondCategory)
+                    }}>{menuItem._id.secondCategory}</div>
                 <div className={cn(styles.secondBlock, {
                     [styles.secondLevelBlockOpened]: menuItem.isOpened
                 })}>

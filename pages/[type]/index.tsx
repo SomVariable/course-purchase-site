@@ -10,10 +10,11 @@ import { ProductModel } from '../../interfaces/product.interface';
 
 let firstCategory = TopLevelCategory.Courses
 
-function Type({ firstCategory }: TypeProps): JSX.Element {
+function Type({ menu, firstCategory }: TypeProps): JSX.Element {
 
 	return (
 		<>
+			Menu: {menu.map(el => <p>{el._id.secondCategory}</p>)}
 			Type: {firstCategory}
 		</>
 	);
@@ -42,7 +43,6 @@ export const getStaticProps: GetStaticProps<TypeProps> = async ({params}: GetSta
 	}
     firstCategory = firstCategoryItem.id
     const {data: menu} = await axios.get<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}`);
-    
     return {
         props: {
             menu,

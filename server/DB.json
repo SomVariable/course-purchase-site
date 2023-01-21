@@ -120,7 +120,13 @@
             ]
         }
     ],
-    "byAlias": [
+    "books": [
+    ],
+    "services": [
+    ],
+    "products": [
+    ],
+    "courses_byAlias": [
         {
             "tags": [
                 "adobe photoshop",
@@ -552,7 +558,7 @@
             }
         }
     ],
-    "products": [
+    "courses_products": [
         {
             "_id": "1234567800001",
             "categories": [
@@ -918,7 +924,13 @@
             "reviewAvg": null
         }
         
-    ]
+    ],
+    "books_byAlias": [],
+    "books_products": [],
+    "services_byAlias": [],
+    "services_products": [],
+    "product_byAlias": [],
+    "product_products": []
 }
 
 
