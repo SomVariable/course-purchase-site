@@ -49,11 +49,10 @@ export const getStaticProps: GetStaticProps<CourseProps> = async ({params}: GetS
     } 
 
     try {
-        const page:TopPageModel  = await (await axios.get<TopPageModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/byAlias?alias=${params.allias}`)).data[0];
-        const products = await (await axios.get<ProductModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/products`)).data.filter(product => product.categories.includes(page.category));
         firstCategory = firstCategoryItem.id
+        const page:TopPageModel  = await (await axios.get<TopPageModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}_byAlias?alias=${params.allias}`)).data[0];
+        const products = await (await axios.get<ProductModel[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}_products`)).data.filter(product => product.categories.includes(page.category));
         const {data: menu} = await axios.get<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/${firstCategory}`);
-        
         return {
             props: {
                 menu,

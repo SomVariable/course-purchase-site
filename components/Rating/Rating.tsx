@@ -51,7 +51,7 @@ export default function Rating({rating, isEditable, setRating, className, ...pro
 		if (!isEditable || !setRating) {
 			return;
 		}
-        debugger
+        
 		setRating(i);
 	};
 	

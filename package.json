@@ -9,7 +9,7 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "lint": "next lint",
     "stylelint": "stylelint \"**/*.css\" --fix",
-    "server": "json-server -w server/DB.json -p 3002"
+    "server": "json-server -w server/DB.json -p 3001"
   },
   "dependencies": {
     "@next/font": "13.1.1",
