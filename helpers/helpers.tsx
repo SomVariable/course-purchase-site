@@ -9,3 +9,6 @@ export const firstLevelMenuItems : FirstLevelMenuItems[] = [
     {route: "services", name: "Services", icon: (props: IMenuIcon) =><ServeciesIcon {...props} />, id: TopLevelCategory.Services},
     {route: "products", name: "Products", icon:(props: IMenuIcon) => <ProductsIcon {...props} />, id: TopLevelCategory.Products}
 ]
+
+
+export const price = (price: number, valute: string = '₽') => price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ').concat(` ${valute}`)
