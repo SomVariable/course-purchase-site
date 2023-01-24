@@ -1,7 +1,9 @@
 import React from 'react'
 import { Tag } from '../../components';
+import { Advantages } from '../../components/Advantages/Advantages';
 import Header, { hTags } from '../../components/Headers/Header';
 import { Hhdata } from '../../components/Hhdata/Hhdata';
+import Text from '../../components/Text/Text';
 import { TopLevelCategory, TopPageModel } from '../../interfaces/page.interface';
 import { ProductModel } from '../../interfaces/product.interface';
 import styles from './TopPageComponents.module.css'
@@ -13,6 +15,7 @@ export interface ITopPageComponents{
 }
 
 export const TopPageComponents = ({page, products, firstCategory}: ITopPageComponents) => {
+  const data = `lorem <b onmouseover="alert('mouseover');">ipsum</b>`;
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
@@ -27,7 +30,14 @@ export const TopPageComponents = ({page, products, firstCategory}: ITopPageCompo
 				<Header tag={hTags.h2}>Вакансии - {page.category}</Header>
 				<Tag color='red' size='m'>hh.ru</Tag>
       </div>
-      {firstCategory == TopLevelCategory.Courses && <Hhdata {...page.hh} />}
+      {firstCategory == TopLevelCategory.Courses && page.hh && <Hhdata {...page.hh} />}
+      {page.advantages && page.advantages.length > 0 && <>
+        <Header tag = {hTags.h2}>Advantages</Header>
+        <Advantages advantages={page.advantages}/>
+      </>}
+      {page.seoText && <div className={styles.seo} dangerouslySetInnerHTML={{ __html: page.seoText }} />}
+      <Header tag = {hTags.h2}>seo</Header>
+      {page.tags.map(tag => <Tag key = {tag} color = 'primary'>{tag}</Tag>)}
     </div>
   )
 }
