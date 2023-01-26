@@ -33,7 +33,7 @@ export const TopPageComponents = ({page, products, firstCategory}: ITopPageCompo
       {firstCategory == TopLevelCategory.Courses && page.hh && <Hhdata {...page.hh} />}
       {page.advantages && page.advantages.length > 0 && <>
         <Header tag = {hTags.h2}>Advantages</Header>
-        <Advantages advantages={page.advantages}/>
+        <Advantages className = {styles.advantage} advantages={page.advantages}/>
       </>}
       {page.seoText && <div className={styles.seo} dangerouslySetInnerHTML={{ __html: page.seoText }} />}
       <Header tag = {hTags.h2}>seo</Header>

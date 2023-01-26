@@ -16,3 +16,8 @@
 	align-items: baseline;
 	gap: 20px;
 }
+
+
+.advantage:not(:last-child){
+	margin-bottom: 40px;
+}
