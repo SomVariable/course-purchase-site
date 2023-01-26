@@ -1,0 +1,19 @@
+.advanteges{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px 40px;
+}
+
+.title{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-l);
+    align-self: center;
+}
+
+.description{
+    font-size: var(--fs-m);
+}
+
+.vline{
+    border-left: 1px solid var(#D2D2D2);
+}

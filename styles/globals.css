@@ -4,7 +4,7 @@ body {
 	padding: 0;
 
 	color: var(--color-dark);
-	background-color: #000;
+	background-color: var(--color-white-300);
 
 	font-family: var(--ff-noto-sans), sans-serif;
 }
