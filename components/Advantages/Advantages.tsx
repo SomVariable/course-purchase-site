@@ -1,23 +1,22 @@
 import React from 'react'
 import { TopPageAdvantage } from '../../interfaces/page.interface'
 import { CheckIcon } from '../UI/CheckIcon/CheckIcon'
-import styels from './Advantages.module.css'
+import styles from './Advantages.module.css'
+import cn from 'classnames'
 
-export interface IAdvantagesProps{
+export interface IAdvantagesProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>{
     advantages: TopPageAdvantage[]
 } 
 
-export const Advantages = ({advantages}: IAdvantagesProps) => {
+export const Advantages = ({advantages, className}: IAdvantagesProps) => {
   return (
     <>
         {advantages.map(advantage => (
-            <div className = {styels.advanteges} key = {advantage._id}>
-                <CheckIcon />
-                <div className = {styels.title}>{advantage.title}</div>
-                <div className="">
-                    <hr className = {styels.vline}/>
-                </div>
-                <div>{advantage.description}</div>
+            <div className = {cn(styles.advanteges, className)} key = {advantage._id}>
+                <CheckIcon className = {styles.icon}/>
+                <div className = {styles.title}>{advantage.title}</div>
+                <hr className={styles.vline} />
+                <div className = {styles.description}>{advantage.description}</div>
             </div>
         ))}   
     </>
